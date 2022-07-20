@@ -18,3 +18,8 @@ function division_function() {
     var division = 40/4;
     document.getElementById("division").innerHTML = "40/4=" + division;
 }
+function modulus_operator() {
+    var simple_Math = 25 % 6;
+    document.getElementById("modulus").innerHTML = "When you divide 25 by 6 you have a remainder of:" + simple_Math;
+
+}
