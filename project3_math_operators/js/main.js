@@ -1,6 +1,15 @@
 function addition_function() {
     //this is the aquation
-    var addition =4+6;
+    var addition = 4 + 6;
     document.getElementById("math").innerHTML = "4+6=" + addition;
-
+}
+function substraction_function() {
+    //this is the aquation
+    var addition = 6 - 4;
+    document.getElementById("substraction").innerHTML = "6-4=" + substraction;
+}
+  function multiplication_function() {
+            //this is the aquation
+            var multiplication= 4x6;
+            document.getElementById("multiplication").innerHTML = "4x6=" + multiplication;
 }
