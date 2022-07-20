@@ -4,5 +4,5 @@ document.getElementById("red heeler");
 function myfunction() {
     var sentence = "I am learning";
     sentence += " a lot from this book!";
-    document.getElementsByid("concatenate").innerHTML = sentence;
+    document.getElementById("concatenate").innerHTML = sentence;
 }
