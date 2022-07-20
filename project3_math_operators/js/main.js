@@ -10,6 +10,11 @@ function substraction_function() {
 }
   function multiplication_function() {
             //this is the aquation
-            var multiplication= 4x6;
+            var multiplication= 4 x 6;
             document.getElementById("multiplication").innerHTML = "4x6=" + multiplication;
+}
+function division_function() {
+    //this is the aquation
+    var division = 40/4;
+    document.getElementById("division").innerHTML = "40/4=" + division;
 }
