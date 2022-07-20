@@ -1,11 +1,11 @@
-function my_dictionaries() {
-    var animal = {
-        species: "Dog",
-        color: "Black",
+function my_dictionary() {
+    var Animal = {
+        Species: "Dog",
+        Color: "Black",
         Breed: "labrador",
         Age: 5,
         Sound: "bark!"
     };
-    document.getElementById("dictionaries").innerHTML = Animal.sound;
-    )
+    document.getElementById("dictionary").innerHTML = Animal.Sound;
+
 }
