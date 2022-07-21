@@ -1,11 +1,9 @@
-function my_dictionary() {
-    var Animal = {
-        Species: "Dog",
-        Color: "Black",
-        Breed: "labrador",
-        Age: 5,
-        Sound: "bark!"
+function my_Dictionary() {
+    var food = {
+        tomatoe: "fruit",
+        carrot: "veg",
+        garlic: "veg",
+        egg: "Protein",
     };
-    document.getElementById("dictionary").innerHTML = Animal.Sound;
-
+    document.getElementById("Dictionary").innerHTML = food.type;
 }
