@@ -1,2 +1,1 @@
-document.write()
-typeof
+document.write(Typeof "word")
