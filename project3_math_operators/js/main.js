@@ -1,7 +1,7 @@
 function addition_function() {
     //this is the aquation
     var addition = 4 + 6;
-    document.getElementById("add").innerHTML = "4+6=" + addition;
+    document.getElementById("add").innerHTML = "4+6=" + add;
 }
 function substraction_function() {
     //this is the aquation
@@ -10,8 +10,8 @@ function substraction_function() {
 }
   function multiplication_function() {
             //this is the aquation
-            var multiplication= 4 x 6;
-            document.getElementById("multiplication").innerHTML = "4x6=" + multiplication;
+            var multiplication= 4*6;
+            document.getElementById("multiplication").innerHTML = "4*6=" + multiplication;
 }
 function division_function() {
     //this is the aquation
