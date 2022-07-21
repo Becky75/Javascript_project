@@ -26,4 +26,6 @@ function modulus_operator() {
 function negation_operator() {
     var x = 10;
     document.getElementById("Math").innerHTML = -x;
+
 }
+window.alert(math.random());
