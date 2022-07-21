@@ -5,5 +5,6 @@ function my_Dictionary() {
         garlic: "veg",
         egg: "Protein",
     };
-    document.getElementById("Dictionary").innerHTML = food.type;
+    delete food.egg;
+    document.getElementById("Dictionary").innerHTML = food.egg;
 }
