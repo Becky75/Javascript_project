@@ -38,9 +38,9 @@ document.write(7 > 10 || 10 > 8);
 document.write(7 > 10 || 10 > 12);
 
 function not_function() {
-    document.getElementsById("not").innerHTML = !(20 > 10);
+    document.getElementById("not").innerHTML = !(20 > 10);
 }
 
-function not_function() {
+function not_function2() {
     document.getElementById("not2").innerHTML = !(15 > 20);
 }
