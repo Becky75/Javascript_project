@@ -37,3 +37,9 @@ function Add_numbers_1(){
 }
 Add_numbers_1();
 Add_numbers2();
+//this is an if statment
+function get_Date() {
+    if (new Date().getHours() < 18) {
+        document.getElementById("Greeting").innerHTML="How are you"
+    }
+}
