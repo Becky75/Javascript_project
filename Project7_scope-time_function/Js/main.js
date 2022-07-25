@@ -28,18 +28,20 @@ function Add_numbers_1() {
 function Add_numbers2() {
     document.write(x + 100);
 }
-Add_numbers_1();
-Add_numbers2();
+
 //this is for the console log
 function Add_numbers_1(){
     var x = 10;
     console.log(x +100);
 }
-Add_numbers_1();
-Add_numbers2();
+
 //this is an if statment
-function get_Date() {
+function get_date() {
     if (new Date().getHours() < 18) {
-        document.getElementById("Greeting").innerHTML="How are you"
+        document.getElementById("greetings").innerHTML = "How are you"
+        
+    }
+    else if (new Date().getHours() >= 18) {
+        document.getElementById("greetings").innerHTML = "morning"
     }
 }

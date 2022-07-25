@@ -4,8 +4,8 @@ function full_Sentence() {
     var part_2 = "made this";
     var part_3 = "into a complete";
     var part_4 = "sentence";
-    var whole_sentence = part_1.concatenate(part_2, part_3, part_4);
-    document.getElementById("concatenate").innerHTML = whole_sentence;
+    var whole_sentence = part_1.concat(part_2, part_3, part_4);
+    document.getElementById("Concat").innerHTML = whole_sentence;
 }
 //this is a slice method
 function slice_Method() {
