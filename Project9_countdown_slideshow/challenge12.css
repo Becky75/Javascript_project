@@ -1,12 +1,12 @@
 *{box-sizing: border-box}
 /*Slideshow container*/
-.slideshow-container{
+.slideShow-container{
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 /*Hide the images by default*/
-.myslides{
+.mySlides{
     display: none;
 }
 /* next & previous buttons*/
@@ -52,7 +52,7 @@
     top: 0;
 }
 /*the dots/bullets/indicators*/
-.dots{
+.dot{
     cursor: pointer;
     height: 15px;
     width: 15px;
