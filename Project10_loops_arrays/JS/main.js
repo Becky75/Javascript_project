@@ -39,22 +39,24 @@ function array_Function() {
 //this is the let keyword
 function Let_keyword() {
 var t = 75;
-document.write(x);
+
     {
         let x = 25;
-        document.write("br>" + x);
-
         document.write("<br>" + x);
-    }
+
+        document.write("<br>" + t);
+        
+        document.write(x);
+}
 }
 // this is an oject let
 function Car_Object() {
-    let car = {
-        make: "dodge",
-        model: "viper",
-        year: "2021",
-        color: "red",
+    let Car = {
+        make: " dodge",
+        model: " viper",
+        year: " 2021",
+        color: " red",
         description: function () { return "The car is a" + this.year + this.color + this.make + this.model; }
     };
-    document.getElementsById("Car_Object").innerHTML = car.description();
+    document.getElementById("Car").innerHTML = Car.description();
 }
