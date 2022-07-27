@@ -20,7 +20,6 @@ document.getElementById("List_of_Instruments").innerHTML = content;
 
 // this is an array 
 
-
     var Cat_picture = [];
  function array_Function(){
         Cat_picture[0] = "sleeping";
@@ -28,5 +27,13 @@ document.getElementById("List_of_Instruments").innerHTML = content;
         Cat_picture[2] = "eating";
         Cat_picture[3] = "purring";
  document.getElementById("Cat").innerHTML = "In this picture, the cat is " + Cat_picture[2] + ".";
+    }
+    //this is array
+    
+    function constant_Function() {
+        const Musical_Instrument = { type: "guitar", brand: "Fender", Color: "black" };
+        Musical_Instrument.color = "blue";
+        Musical_Instrument.price = "$900";
+        document.getElementById("Constant").innerHTML = "The cost of the" + Musical_Instrument.price;
     }
 }
