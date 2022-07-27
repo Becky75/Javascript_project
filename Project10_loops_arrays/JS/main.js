@@ -13,8 +13,20 @@ function Count_To_Ten() {
     var content = "";
     var Y;
 function for_Loop() {
-    for (Y = 0; Y < Instruments.lenght; y++); {
+    for (Y = 0;Y < Instruments.lenght; Y++) {
         content += Instruments[Y] + "<br>";
 }
 document.getElementById("List_of_Instruments").innerHTML = content;
+
+// this is an array 
+
+
+    var Cat_picture = [];
+ function array_Function(){
+        Cat_picture[0] = "sleeping";
+        Cat_picture[1] = "playing";
+        Cat_picture[2] = "eating";
+        Cat_picture[3] = "purring";
+ document.getElementById("Cat").innerHTML = "In this picture, the cat is " + Cat_picture[2] + ".";
+    }
 }
