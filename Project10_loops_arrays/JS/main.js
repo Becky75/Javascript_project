@@ -13,8 +13,9 @@ function Count_To_Ten() {
     var content = "";
     var Y;
 function for_Loop() {
-    for (Y = 0;Y < Instruments.lenght; Y++) {
+    for (Y = 0; Y < Instruments.lenght; Y++) {
         content += Instruments[Y] + "<br>";
+    }
 }
 document.getElementById("List_of_Instruments").innerHTML = content;
 
@@ -30,10 +31,9 @@ document.getElementById("List_of_Instruments").innerHTML = content;
     }
     //this is array
     
-    function constant_Function() {
-        const Musical_Instrument = { type: "guitar", brand: "Fender", Color: "black" };
-        Musical_Instrument.color = "blue";
-        Musical_Instrument.price = "$900";
+    function Constant_Function() {
+        const Musical_Instrument = { type: "Guitar", brand: "Strada", Color: "Black" };
+        Musical_Instrument.color = "purple";
+        Musical_Instrument.price = "$1200";
         document.getElementById("Constant").innerHTML = "The cost of the" + Musical_Instrument.price;
     }
-}
