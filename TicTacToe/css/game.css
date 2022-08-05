@@ -18,7 +18,7 @@ td{
 		/*this property changes the cursor to the index finger hand when we hover over td elements.*/
 		cursor: pointer;
 		/*this property sets our table boarder style.*/
-		border: 4px solid rgba(252, 169, 3, 0.8);
+		border: 4px solid rgba(78, 19, 58, 0.8);
 		color: purple;
 		/* this property removes default padding.*/
 		padding: 0px;

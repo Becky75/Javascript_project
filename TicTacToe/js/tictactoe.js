@@ -211,7 +211,7 @@ audio('./media/winGame.mp3');
 animateLineDrawing();
 //this line waits 1 second.
 //then, clears canvas,resets game, and allows clicking again.
-setTimeout(function(){clear(); restGame();},1000);
+setTimeout(function(){clear(); resetGame();},1000);
 }
 //this function resets the game in a tie or a win.
 function resetGame(){
