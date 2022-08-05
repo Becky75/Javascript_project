@@ -1,13 +1,13 @@
 //This variable keeps track of who's turn it is.
-let activePlayer="X";
+let activePlayer='X';
 //thia array stores an array of moves. We use this to determine win conditions.
 let selectedSquares=[];
 //this function is for placing an x or o in a square.
-function placeXOrO(squareNumber){
+function placeXOrO(squareNumber) {
     //this condition ensures a square hasnt be selected already.
     //the .some() method is used to check each element of selectedSquare array oto
     //see if it contains the square number clicked on.
-if (!selectedSquares.some(Element=>includes(squareNumber))){
+if (!selectedSquares.some(Element=> element.includes(squareNumber))){
     //this variable retrieves the html element id that was clicked.
     let select=document.getElementById(squareNumber);
     //this condition checks who'sturn it is.
@@ -15,16 +15,17 @@ if (!selectedSquares.some(Element=>includes(squareNumber))){
         //if activePlayer is equal to'X',theX.png is placed in html.
         select.style.backgroundImage='url("image/X.png")';
     //if activePlayer may only be 'X' or'O' so,if not 'X' it must be 'O'.
-    } else{
+    } 
+    else {
         //if activePlayer is equal to 'O', the O.png is placed in html.
-    select.style.backgroundImage='url'("image/O.png")
+    select.style.backgroundImage='url'("image/O.png");
     }
     //squareNumber and activePlayer are concatenated together and add to array.
-    selectedSquares.push(squareNumber+activePlayer);
+    selectedSquares.push(squareNumber + activePlayer);
     //this calls a function to check for any win conditions.
     checkWinConditions();
     //this condition is for changing the active player.
-    if (activePlayer==='X'){
+    if (activePlayer==='X') {
         //if active player is'X' change it to 'O'.
         activePlayer='O';
     //if active player is anythimg other then 'X'.
@@ -34,7 +35,7 @@ if (!selectedSquares.some(Element=>includes(squareNumber))){
         activePlayer='X';
     }
     //this function plays placement sound.
-    Audio('./media/place.mp3');
+    audio('./media/bell.mp3');
     //this condition checks to see if it is computers turn.  
       if(activePlayer==='O'){
         //this function disables clicking for computer choice.
@@ -45,7 +46,6 @@ if (!selectedSquares.some(Element=>includes(squareNumber))){
     }
     //reeturning true is needed for our computersTurn()function to work.
     return true;
-}
 //this function results in a randomm square being selected.
 function computersTurn(){
     //this boolean is needed for our while loop.
@@ -56,16 +56,17 @@ function computersTurn(){
     //trying if a square is selected already.
     while(!success){
         //a random number between 0 and 8 is selected
-        pickASquare=string(math.floor(math.random()*9));
+        pickASquare=string(Math.floor(Math.random()*9));
         //if the random number evaluates returns to true, the square hasn't been selected yet.
         if(placeXOrO(pickASquare)){
             //this line calls the fuction.
             placeXOrO(pickASquare);
             //this changes our boolean and ends loops.
             success=true;
-        };
+             };
         }
     }
+}
 }
 //this is part 5
 //this fnction parse the selectedSquares array to search for win conditions.
@@ -107,9 +108,9 @@ function checkWinConditions(){
     //and 9 squares are selected,the coe executes.
     else if (selectedSquares.length>=9){
         //this function plays  the tie game sound.
-        Audio('./media/tie.mp3');
+        Audio('./media/lgbell.mp3');
         //this function sets a .3 second timer before the resetGame is called.
-        setTimeout(function(){restGame();},1000);
+        setTimeout(function(){restGame();},500);
     }
    //this function checks if an array includes 3 strings.
    //it is used to check for each win conidtion.
@@ -121,6 +122,8 @@ function checkWinConditions(){
     //if the 3 variables we pass are all included in our array true is
     //returned and our else if condition executes the drawWinLine function.
     if(a === true && b === true && c === true){return true;}
+   }
+}
     //this is part 6
     //this function makes our body element temporarily unclickable.
     function disableClick(){
@@ -153,8 +156,8 @@ x2=coordX2,
 //this indicates wher ethe end of a lines y axis is.
 y2=coordY2,
 //this variable stores temporary x axis data we update in our animation loop.
-x=x1//this variable stores temporary y axis data we update in our animation loop.
-y=y1;
+x=x1,//this variable stores temporary y axis data we update in our animation loop.
+y=y1
 
 //this function interacts with the canvas
 function animateLineDrawing(){
@@ -196,7 +199,7 @@ function clear(){
     //this line starts our animation loop.
     const animationLoop=requestAnimationFrame(clear);
     //this line clears our canvas
-    c.clearRect(0,0,608,608);
+    c.clearRect(0,0,608,608)
     //this line stops our animation loop.
     cancelAnimationFrame(animationLoop);
 }
@@ -213,7 +216,7 @@ setTimeout(function(){clear(); restGame();},1000);
 //this function resets the game in a tie or a win.
 function resetGame(){
     //this for loop interates through each html square element..
-    for (let i = 0; i< 9; 1++){
+    for (let i = 0; i< 9; i++){
         //this variable gets the html element of i.
         let square=document.getElementById(string(i));
         //this removes our elements backgroundImage.
@@ -222,5 +225,4 @@ function resetGame(){
     //this rests our array so it is easy and we can start over.
     selectedSquares=[];
 }
-   }
-}
+   
