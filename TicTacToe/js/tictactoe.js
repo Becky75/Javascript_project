@@ -7,18 +7,18 @@ function placeXOrO(squareNumber) {
     //this condition ensures a square hasnt be selected already.
     //the .some() method is used to check each element of selectedSquare array oto
     //see if it contains the square number clicked on.
-if (!selectedSquares.some(Element=> element.includes(squareNumber))){
+if (!selectedSquares.some(element=> element.includes(squareNumber))){
     //this variable retrieves the html element id that was clicked.
     let select=document.getElementById(squareNumber);
     //this condition checks who'sturn it is.
     if(activePlayer==='X') {
         //if activePlayer is equal to'X',theX.png is placed in html.
-        select.style.backgroundImage='url("image/X.png")';
+        select.style.backgroundImage='url("images/X.png")';
     //if activePlayer may only be 'X' or'O' so,if not 'X' it must be 'O'.
     } 
     else {
         //if activePlayer is equal to 'O', the O.png is placed in html.
-    select.style.backgroundImage='url'("image/O.png");
+    select.style.backgroundImage='url("images/O.png")';
     }
     //squareNumber and activePlayer are concatenated together and add to array.
     selectedSquares.push(squareNumber + activePlayer);
