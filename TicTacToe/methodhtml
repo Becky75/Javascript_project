@@ -1,0 +1,14 @@
+<!DOCTYPE>
+<body>
+    <h2>some array .some()</h2>
+    <p> the some()checks if some array values pass test.</p>
+    <p id="demo"></p>
+    <script>
+        const numbers=[45, 9, 4, 16, 25];
+        let someOver18= numbers.some(my4 function);
+        document.getElementById("demo").innerHTML="some over 18 is"
+        + someOver18;
+        function myfunction(value, index, array){return value>18;}
+    </script>
+</body>
+</html>
