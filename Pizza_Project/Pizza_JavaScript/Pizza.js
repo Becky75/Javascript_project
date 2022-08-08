@@ -37,14 +37,14 @@ function getReceipt(){
         var toppingTotal=0;
         var selectTopping=[];
         var toppingArray=document.getElementsByClassName("topping");
-        For (var j=0;j<toppingArray.length;j++) {
+        for (var j=0;j<toppingArray.length;j++) {
             if (toppingArray[j].checked){
                 selectedTopping.push(toppingArray[j].value);
                 console.log("selected topping item:("+toppingArray[j].value+")");
                 text1=text1+toppingArray[j].value+"<br>";
             }
         }
-        var toppingCount=selectedTopping.length;
+        var toppingCount=selectTopping.length;
         if(toppingCount>1){
             toppingTotal=(toppingCount-1);
         }
@@ -53,9 +53,9 @@ function getReceipt(){
         }
         runningTotal=(runningTotal+toppingTotal);
         console.log("total selectedtopping items:"+toppingCount);
-        console.log(toppingCount+" topping -1 free topping ="+"$"+toppingToTal+".00");
+        console.log(toppingCount+" topping -1 free topping ="+"$"+toppingTotal+".00");
         console.log("topping text1: "+text1);
         console.log("Purchase Total: "+"$"+runningTotal+".00");
         document.getElementById("showText").innerHTML=text1;
-        document.getElementById("totalPrice").innerHTML="<h3>Total:<strong>$"+runningTotal+".00"+"</strong></h3>";
+        document.getElementById("totalprice").innerHTML="<h3>Total:<strong>$"+runningTotal+".00"+"</strong></h3>";
         };
