@@ -13,14 +13,19 @@ div{
     color: aqua;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+.menu-container{
+    display:grid;
+    margin: 0% auto;
+    width: 100%;
+    
+}
 #menuBG {
-    width: 400px;
+    width: 700px;
     height: 470px;
     margin: 10px auto;
 }
 #frmMenue { 
-    width: 400px;
+    width: 100%;
     height: 200px;
 }
 #totalPrice {
@@ -32,12 +37,18 @@ div{
 .left {
     width: 200px;
     height: 200px;
+    grid-column: 1/2;
     float:left;
 }
 .right {
     width: 200px;
     height: 200px;
-    float:left;
+    grid-column: 3/4;
+}
+.center{
+    width: 200px;
+    height: 200px;
+    grid-column: 2/3;
 }
 #showText {
     width: 200px;
