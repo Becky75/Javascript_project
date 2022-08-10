@@ -14,7 +14,7 @@ div{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .menu-container{
-    display:grid;
+
     margin: 0% auto;
     width: 100%;
     
@@ -37,18 +37,17 @@ div{
 .left {
     width: 200px;
     height: 200px;
-    grid-column: 1/2;
     float:left;
 }
 .right {
     width: 200px;
     height: 200px;
-    grid-column: 3/4;
+    float: right;
 }
 .center{
     width: 200px;
     height: 200px;
-    grid-column: 2/3;
+    
 }
 #showText {
     width: 200px;
@@ -68,4 +67,9 @@ div{
     height: 40px;
     display: block;
     margin: 25px auto;
+}
+.button {
+    padding-top: 10px;
+    justify-items: center;
+    display: grid;
 }
